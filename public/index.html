@@ -3,49 +3,51 @@
    <head>
        <title>Page title shown in window title</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
        
    </head>
    <body>
 
         <header>
-            <h1 style="color: blue; height: 5rem;"> If you don't like burgers you're in the wrong place!</h1>
+            <img src="https://3dzip.org/wp-content/uploads/2019/01/3D-Model-Interior-Restaurant-221-Free-Download-3.jpg"> 
+            <h1> Burger Bar & non-alkoholic Beer</h1>
+            
         </header>
         <main>
-            <section>
+            <section id="burger-section" >
                 <h2>Please choose a burger</h2>
                 <h3>If you don't choose one below you won't be able to reap the benefits</h3>
-                <div style="float: left;">
-                    <h2> Miracle Burger</h2>
-                    <img src="https://toppng.com/uploads/preview/burger-free-pictures-1153859353087aydafeq9.png" alt="Miracle Burger" height="300px" width="300px">
-                    <ol>
-                        <li>5 kCal</li>
-                        <li>Gluten free</li>
-                        <li>Vegan</li>
-                    </ol>
-                </div>
-                <div style="float: left;">
-                    <h2> Almost Miracle Burger</h2>
-                    <img src="https://images.all-free-download.com/images/graphiclarge/homemade_burger_560254.jpg" alt="Almost Miracle Burger" height="300px" width="400px">
-                    <ol>
-                        <li>750 kCal</li>
-                        <li>Lactose free</li>
-                        <li>Containes lactose</li>
-                    </ol>
-                </div>
-                <div style="float: left; clear: right;" >
-                    <h2> Very Miracle Burger</h2>
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Very Miracle Burger" height="300px" width="300px">
-                    <ol>
-                        <li>1000 kCal</li>
-                        <li>Contains gluten</li>
-                        <li>Containes lactose</li>
-                        <li>To much sauce</li>
-                    </ol>
-                </div>
-                
+                    <div class="burger-1">
+                        <h4> Miracle Burger</h4>
+                        <img class="burger-img-1" src="https://toppng.com/uploads/preview/burger-free-pictures-1153859353087aydafeq9.png" alt="Miracle Burger" >
+                        <ul >
+                            <li>800 kCal</li>
+                            <li><span >Gluten</span> free</li>
+                            <li>Vegan</li>
+                        </ul>
+                    </div>
+                    <div class="burger-2" >
+                        <h4> Almost Miracle Burger</h4>
+                        <img class="burger-img-2" src="https://images.all-free-download.com/images/graphiclarge/homemade_burger_560254.jpg" alt="Almost Miracle Burger" >
+                        <ul >
+                            <li>750 kCal</li>
+                            <li>Contains <span>gluten</span> </li>
+                            <li>Contains <span >lactose</span></li>
+                        </ul>
+                    </div>
+                    <div class="burger-3">
+                        <h4> Very Miracle Burger</h4>
+                        <img class="burger-img-3" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Very Miracle Burger" >
+                        <ul >
+                            <li>1000 kCal</li>
+                            <li>Contains <span >gluten</span></li>
+                            <li>Contains <span >lactose</span></li>
+                            <li>To much sauce</li>
+                        </ul>
+                    </div>
             </section>
 
-            <section style="clear: left;">
+            <section id="form-section" >
                 <h2>Please tell us about yourself..</h2>
                 <h3>.. by filling out this form</h3>
                 <form>
@@ -94,12 +96,13 @@
                             <label for="male">Male</label>
                             
                         </p>
-                        <button type="submit">
-                            <img src="https://media.istockphoto.com/vectors/burger-cartoon-vector-id1195987636?s=612x612" alt="Burger icon" width="15px" height="15px" >
-                            Place order
-                        </button>
+                        
                 </form>
             </section>
+            <button type="submit">
+                <img src="https://media.istockphoto.com/vectors/burger-cartoon-vector-id1195987636?s=612x612" alt="Burger icon" width="15px" height="15px" >
+                Place order
+            </button>
         </main>
         <hr>
         <footer>

@@ -1,1 +1,119 @@
-/*empty*/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 300px;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+h1{ 
+    position: absolute;
+    top: 1em;
+    left: 2.4em; 
+    font-size: 4em;
+    -webkit-text-stroke: 1px black;
+    color: #5A0C00;
+    font-family: 'Mochiy Pop One', sans-serif, Arial, Helvetica, sans-serif;
+
+}
+
+header img{
+    opacity: 0.65;
+    position: relative;
+    top: -150%;
+}
+
+#burger-section {
+    background-color: black;
+    color: white;
+    border: 2px dashed white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+    overflow: auto;
+    display: grid;
+}
+
+section h2{
+    margin-left: 2rem;
+    grid-row: 1;
+    grid-column: 1 /span 3;
+
+}
+
+section h3{
+    margin-left: 2rem;
+    grid-row: 2;
+    grid-column: 1 /span 3;
+
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.burger-1{
+    grid-column: 1;
+    grid-row: 3;
+}
+.burger-2{
+    grid-column: 2;
+    grid-row: 3;
+
+}
+.burger-3{
+    grid-column: 3;
+    grid-row: 3;
+
+}
+
+
+
+.burger-img-1, .burger-img-3 {
+    height: 300px;
+    width: 300px;
+
+}
+.burger-img-2{
+    height: 300px;
+    width: 400px;
+}
+
+
+div span {
+    font-weight: bolder;
+
+}
+
+
+#form-section{
+    clear: left; border: 2px dashed black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+form {
+    margin-left: 2rem;
+}
+
+button{
+    margin: 1rem 0 1rem 2rem;
+}
+
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+footer{
+    margin-bottom: 1rem;
+}
+
+
