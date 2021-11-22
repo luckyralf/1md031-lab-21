@@ -1,0 +1,113 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       
+   </head>
+   <body>
+
+        <header>
+            <img src="https://3dzip.org/wp-content/uploads/2019/01/3D-Model-Interior-Restaurant-221-Free-Download-3.jpg"> 
+            <h1> Burger Bar & non-alkoholic Beer</h1> 
+        </header>
+        <main>
+            <section id="burgerSection" >
+                <h2>Please choose a burger</h2>
+                <h3>If you don't choose one below you won't be able to reap the benefits</h3>
+                    <div class="burger-1">
+                        <h4> Miracle Burger</h4>
+                        <img class="burger-img-1" src="https://toppng.com/uploads/preview/burger-free-pictures-1153859353087aydafeq9.png" alt="Miracle Burger" >
+                        <ul >
+                            <li>800 kCal</li>
+                            <li><span >Gluten</span> free</li>
+                            <li>Vegan</li>
+                        </ul>
+                    </div>
+                    <div class="burger-2" >
+                        <h4> Almost Miracle Burger</h4>
+                        <img class="burger-img-2" src="https://images.all-free-download.com/images/graphiclarge/homemade_burger_560254.jpg" alt="Almost Miracle Burger" >
+                        <ul >
+                            <li>750 kCal</li>
+                            <li>Contains <span>gluten</span> </li>
+                            <li>Contains <span >lactose</span></li>
+                        </ul>
+                    </div>
+                    <div class="burger-3">
+                        <h4> Very Miracle Burger</h4>
+                        <img class="burger-img-3" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Very Miracle Burger" >
+                        <ul >
+                            <li>1000 kCal</li>
+                            <li>Contains <span >gluten</span></li>
+                            <li>Contains <span >lactose</span></li>
+                            <li>To much sauce</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section id="form-section" >
+                <h2>Please tell us about yourself..</h2>
+                <h3>.. by filling out this form</h3>
+                <form>
+                    <p>
+                        <label for="fullname">Full name</label><br>
+                        <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+                    </p>
+                    
+                    <p>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                    </p>
+                    <p>
+                        <label for="streetname">Street name</label><br>
+                        <input type="text" id="streetname" name="sn" placeholder="Street name">
+                    </p>
+                    <p>
+                        <label for="housenumber">House number</label><br>
+                        <input type="number" id="housenumber" name="hn" placeholder="House number">
+                    </p>
+                    <p>
+                        <label for="payment">Payment method</label><br>
+                        <select id="payment" name="pay">
+                            <option selected="select">Credit card </option>
+                            <option>Debit card </option>
+                            <option>Swoosh </option>
+                            <option>Cash</option>
+                    
+                        </select>
+                    </p>
+                        <h3>Gender</h3>
+                        <p>
+                            <input type="radio" id="male" name="gn" checked="checked">
+                            <label for="notspecified">I don't want to specify</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="female" name="gn">
+                            <label for="female">Female</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="nonbinary" name="gn">
+                            <label for="nonbinary">Non-binary</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="notspecified" name="gn">
+                            <label for="male">Male</label>
+                            
+                        </p>
+                        
+                </form>
+            </section>
+            <button type="submit">
+                Place order
+            </button>
+        </main>
+        <hr>
+        <footer>
+            &copy; Right place for burgers c/o
+        </footer>
+   </body>
+</html>
