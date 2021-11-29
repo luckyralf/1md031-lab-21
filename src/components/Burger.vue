@@ -35,14 +35,15 @@ export default {
 
     addBurger: function(){
         this.amountOrdered += 1;
-        this.$emit('orderedBurger', { name : this.burger.name,
+        console.log(this.burger.burgerId);
+        this.$emit('orderedBurger', { burgerId : this.burger.burgerId,
                                       amount: this.amountOrdered
                                     }
                   );
       },
     removeBurger: function(){
         this.amountOrdered -= 1;
-        this.$emit('orderedBurger', { name : this.burger.name,
+        this.$emit('orderedBurger', { burgerId : this.burger.burgerId,
                                       amount: this.amountOrdered
                                     }
                   );

@@ -2,7 +2,11 @@
   <div id="orders">
     <div id="orderList">
       <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-        <span id="orderNrAndBurgers"> Order: {{ key }}:  MB: {{order.orderItems.MB}}, Alost MB: {{order.orderItems.AMB}}, Very MB: {{order.orderItems.VMB}}</span> <br>
+        <span id="orderNrAndBurgers" v-if="order.orderItems.MB > 0"> Order: {{ key }}: 
+          <span  v-if="order.orderItems.MB > 0">MB:  {{order.orderItems.MB}}, </span>
+          <span  v-if="order.orderItems.AMB > 0"> Alost MB: {{order.orderItems.AMB}},</span>
+          <span  v-if="order.orderItems.VMB > 0"> Very MB: {{order.orderItems.VMB}}</span> 
+        </span> <br>
         Info: {{order.details.namn}}, {{order.details.email}}, {{order.details.pay}}, {{order.details.gender}},
         
       </div>

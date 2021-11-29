@@ -93,28 +93,6 @@ import io from 'socket.io-client'
 import menu from '../assets/menu.json'
 const socket = io();
 
-// function menuItem(name, imgURL, kCal, lactose, gluten){
-//   this.name = name;
-//   this.image = imgURL;
-//   this.kCal = kCal;
-//   this.lactose = lactose;
-//   this.gluten = gluten;
-// }
-// const firstBurger = new menuItem( 'Miracle Burger',
-//                                   'https://toppng.com/uploads/preview/burger-free-pictures-1153859353087aydafeq9.png',
-//                                   '800', 
-//                                   true, 
-//                                   false);
-// const secondBurger = new menuItem('Almost Miracle Burger',
-//                                   'https://images.all-free-download.com/images/graphiclarge/homemade_burger_560254.jpg', 
-//                                   '750', 
-//                                   false, 
-//                                   false);
-// const thirdBurger = new menuItem( 'Very Miracle Burger', 
-//                                   'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80', 
-//                                   '1000', 
-//                                   true, 
-//                                   true);
 
 const burgerArray = menu;
 
@@ -141,18 +119,16 @@ export default {
     getOrderNumber: function () {
       return Math.floor(Math.random()*100000);
     },
-    // addOrder: function (event) {
-    //   var offset = {x: event.currentTarget.getBoundingClientRect().left,
-    //                 y: event.currentTarget.getBoundingClientRect().top};
-    //   
-    // } ,
+    
     setLocation: function(event){
+      console.log(event);
       const offset = event.target.getBoundingClientRect();
       this.location.x = event.clientX-offset.left-10;
       this.location.y = event.clientY-offset.top-10;
     },
      addToOrder: function (event) {
-      this.orderedBurgers[event.name] = event.amount;
+      this.orderedBurgers[event.burgerId] = event.amount;
+      console.log(this.orderedBurgers);
     },
     submiting: function() {
       
