@@ -30,12 +30,10 @@
                     <p>
                         <label for="streetname">Street name</label><br>
                         <input type="text" id="streetname"  v-model="sn" placeholder="Street name">
-
                     </p>
                     <p>
                         <label for="housenumber">House number</label><br>
                         <input type="number" id="housenumber" v-model="hn" placeholder="House number">
-
                     </p>
                     <p>
                         <label for="payment">Payment method</label><br>
@@ -45,7 +43,6 @@
                             <option>Swoosh </option>
                             <option>Cash</option>
                         </select>
-
                     </p>
                         <h3>Gender</h3>
                         <p>
@@ -64,11 +61,8 @@
                             <input type="radio" id="notspecified" value="Notspecified" v-model="gn">
                             <label for="notspecified">I don't want to specify</label>
                         </p>
-                        
                 </form>
-                
                 <section >
-                  
                   <h2>Pic location on map</h2>
                   <div id="mapWrap" >
                     <div id="mapImg" v-on:click="setLocation">
@@ -76,28 +70,21 @@
                     </div>
                   </div>
                 </section>
-                <!-- -->
-
                 <button id="orderButton" v-on:click="submiting" type="submit" >
                   <img src="https://media.istockphoto.com/vectors/burger-cartoon-vector-id1195987636?s=612x612" alt="Burger icon" width="15px" height="15px" >
                   Place order
                 </button>
-
             </section>
-            
 </template>
+
 
 <script>
 import Burger from '../components/Burger.vue'
 import io from 'socket.io-client'
 import menu from '../assets/menu.json'
 const socket = io();
-
-
 const burgerArray = menu;
-
 export default {
-
   name: 'Home',
   components: {
     Burger
@@ -113,13 +100,11 @@ export default {
       orderedBurgers: {},
       location: {x: 0, y:0}
     }
-    
   },
   methods: {
     getOrderNumber: function () {
       return Math.floor(Math.random()*100000);
     },
-    
     setLocation: function(event){
       console.log(event);
       const offset = event.target.getBoundingClientRect();
@@ -142,21 +127,17 @@ export default {
                                 orderItems: this.orderedBurgers
                              }
                   );
-    
     },
   }
 }
-
 </script>
 
 <style>
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1500px;
 }
-
 header {
     height: 300px;
     overflow: hidden;
